@@ -79,12 +79,29 @@ body {
   background-color: hsl(180, 31%, 95%);
   color: hsl(180, 29%, 50%);
   font-size: 12px;
-  padding: 5px 10px;
+  padding: 5px 10px
   border-radius: 5px;
   margin-right: 10px;
   margin-top: 10px;
 }
 
+@media (min-width: 768px) {
+  .job {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .job-tags {
+    margin-top: 0;
+  }
+}
 
 .attribution {
   font-size: 11px;
